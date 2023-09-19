@@ -26,7 +26,7 @@ public class SpawnManager : MonoBehaviour
         if(enemyCount == 0)
         {
             waveNumber++;
-            SpawnEnemyWave(1);
+            SpawnEnemyWave(2);
             int randomPowerup = Random.Range(0, powerupPrefabs.Length);
             Instantiate(powerupPrefabs[randomPowerup], GenerateSpawnPosition(), powerupPrefabs[randomPowerup].transform.rotation);
         }
